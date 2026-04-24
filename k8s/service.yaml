@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-234608-hf4k-service
+spec:
+  selector:
+    app: enterprise-system-234608-hf4k
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
